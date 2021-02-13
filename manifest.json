@@ -1,6 +1,6 @@
 {
-    "name": "LinkedIn Extension",
-    "description": "This extension will help to copy names from Linked In",
+    "name": "Anchor Link Creator",
+    "description": "This extension will help to create Anchor Links",
     "version": "1.0",
     "background": {
         "persistent": false,
@@ -11,22 +11,10 @@
     "browser_action": {
         "default_icon": "icon.png",
         "default_popup": "popup.html",
-        "default_title": "LinkedIn Extension"
+        "default_title": "Anchor Link Creator"
     },
     "permissions": [
-        "storage",
-        "notifications",
-        "activeTab",
-        "tabs",
-        "bookmarks",
-        "browsingData",
-        "identity",
-        "topSites",
-        "history",
-        "http://*/",
-        "https://*/",
-        "clipboardRead",
-        "clipboardWrite"
+        "activeTab"
     ],
     "icons": {
         "64": "icon.png"
