@@ -1,0 +1,35 @@
+{
+    "name": "LinkedIn Extension",
+    "description": "This extension will help to copy names from Linked In",
+    "version": "1.0",
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "LinkedIn Extension"
+    },
+    "permissions": [
+        "storage",
+        "notifications",
+        "activeTab",
+        "tabs",
+        "bookmarks",
+        "browsingData",
+        "identity",
+        "topSites",
+        "history",
+        "http://*/",
+        "https://*/",
+        "clipboardRead",
+        "clipboardWrite"
+    ],
+    "icons": {
+        "64": "icon.png"
+    },
+    "manifest_version": 2
+}
