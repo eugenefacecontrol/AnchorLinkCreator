@@ -13,6 +13,16 @@
         "default_popup": "popup.html",
         "default_title": "Anchor Link Creator"
     },
+    "commands": {
+        "Get-AnchorLink": {
+            "suggested_key": {
+                "default": "Shift+Alt+R",
+                "linux": "Ctrl+Shift+R"
+            },
+            "description": "Send a 'Get-AnchorLink' event to the extension",
+            "global": false
+        }
+    },
     "permissions": [
         "activeTab"
     ],

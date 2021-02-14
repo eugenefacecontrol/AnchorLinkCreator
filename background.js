@@ -12,4 +12,11 @@ chrome.runtime.onInstalled.addListener(function(){
             actions: [new chrome.declarativeContent.ShowPageAction()]
         }]);
     });
+    chrome.commands.onCommand.addListener(function (command) {
+        if (command === "Get-AnchorLink") {
+            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+                chrome.tabs.executeScript({ file: '/getAnchorLink.js' });
+            });
+        }
+      });
 });
